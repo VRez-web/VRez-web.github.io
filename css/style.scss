@@ -26,7 +26,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: miniAnim 5s ease-out  forwards;
+        animation: miniAnim 4s ease-out forwards;
         height: 100vh;
         min-height: 750px;
 
@@ -93,7 +93,7 @@ body {
     text-align: center;
     margin-right: 50px;
     max-height: 550px;
-  
+
     img {
         width: 160px;
         height: 160px;
@@ -357,6 +357,7 @@ body {
     &__person-text {
         margin-bottom: 15px;
         line-height: 20px;
+      
     }
 
     &__menu {
@@ -477,6 +478,7 @@ body {
     border-bottom: 1px dashed #1291b1;
     cursor: help;
     position: relative;
+    text-decoration: none;
 
     &:before {
         display: block;
@@ -619,11 +621,12 @@ body {
     }
 }
 
-@keyframes miniAnim{
-    from{
+@keyframes miniAnim {
+    from {
         opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }

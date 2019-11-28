@@ -13,6 +13,10 @@ $(function () {
 		$('.portfolio__item').not(get_current).hide(750);
 		get_current.show(750);
 
+
+			
+
+		
 	});
 
 	$('#showall').click(function () {

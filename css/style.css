@@ -25,8 +25,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation: miniAnim 5s ease-out  forwards;
-          animation: miniAnim 5s ease-out  forwards;
+  -webkit-animation: miniAnim 4s ease-out forwards;
+          animation: miniAnim 4s ease-out forwards;
   height: 100vh;
   min-height: 750px;
 }
@@ -556,6 +556,7 @@ body {
   border-bottom: 1px dashed #1291b1;
   cursor: help;
   position: relative;
+  text-decoration: none;
 }
 
 .tooltip:before {
