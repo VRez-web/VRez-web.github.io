@@ -26,7 +26,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-
+        animation: miniAnim 5s ease-out  forwards;
         height: 100vh;
         min-height: 750px;
 
@@ -63,6 +63,11 @@ body {
         display: flex;
         justify-content: space-between;
         width: 70%;
+
+        span {
+            text-align: left;
+            width: 82%;
+        }
     }
 
 
@@ -88,7 +93,7 @@ body {
     text-align: center;
     margin-right: 50px;
     max-height: 550px;
-
+  
     img {
         width: 160px;
         height: 160px;
@@ -368,7 +373,7 @@ body {
                 flex-direction: column;
                 position: absolute;
                 top: 0;
-                left: 0;
+                right: 50px;
                 z-index: 3;
                 align-items: center;
                 background: #fff;
@@ -576,5 +581,49 @@ body {
 
             }
         }
+    }
+
+    &__item {
+        position: relative;
+        height: 150px;
+
+        &:hover &-content {
+            opacity: 1;
+        }
+
+        &-content {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, .7);
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity linear .5s;
+
+            i {
+                margin-right: 10px;
+            }
+
+            a {
+                display: flex;
+                text-decoration: none;
+                color: #fff;
+                justify-content: center;
+                align-items: center;
+                height: inherit;
+            }
+        }
+
+
+    }
+}
+
+@keyframes miniAnim{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
     }
 }
